@@ -1,0 +1,36 @@
+#summary What you should know about the code on the trunk
+#labels Featured
+
+= Introduction =
+
+The code checked into the trunk right now is alpha quality.  When I think it's stable enough, I'll make a formal release called "Feed on Feeds 0.5".  For now I guess we can call it "Feed on Feeds 0.4999..."
+
+= What seems to work =
+
+This version has been fairly well tested on Firefox 1.5 and Safari 2.0.  It is installed on a Linux host with PHP 5.1 and MySQL 5.0.  PHP 4-ish and MySQL 3-ish may also be fine.  On my server I have two users, one (me!) with about 200 subscribed feeds and another with just a handful.  Performance is acceptable.
+
+= What likely doesn't =
+
+I have made some effort to get IE 6 to work but don't test regularly.
+
+Feed on Feeds now has its own authentication built in, but I don't trust it yet and have my whole installation behind Apache authentication as well, and I suggest you do the same for the time being.
+
+= What is definitely broken =
+
+== Security ==
+
+Code is probably rife with SQL injection attacks.
+
+== Wii ==
+
+I can't read my feeds very well on the Wii browser!  This must be fixed!  It would be nice if FoF had a workaround for the Wii browser's lack of tabs, as well.
+
+= What is half done =
+
+There is a basic implemenatiton of tagging, but it's nearly useless as is.  What would help is a way to tag a feed, or auto-tag items as they come in based on keywords or based on an outside tag source like del.icio.us.
+
+Favicons can be turned on in the prefs, but sometimes SimplePie (the RSS/Atom engine) thinks a feed has one when it really doesn't, which then slows down page loading considerably.
+
+Keyboard navigation.
+
+Time zone stuff is halfway transitioned from being configured in a file to in the database.
