@@ -1,6 +1,8 @@
 #summary How to install Feed on Feeds straight from svn
 #labels Featured
 
+Before installing, make sure you undestand all the caveats listed in TrunkStatus.
+
 ==Get code==
 
 {{{
@@ -35,4 +37,3 @@ Database tables will be created, and a local 'cache' directory will be created. 
 ==Done!==
 
 Navigate to http://your-server.com/feed-on-feeds/, login, and start subscribing or creating users!
-
