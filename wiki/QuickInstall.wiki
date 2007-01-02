@@ -1,0 +1,38 @@
+#summary How to install Feed on Feeds straight from svn
+#labels Featured
+
+==Get code==
+
+{{{
+$ cd /WEB/ROOT
+$ svn checkout http://feed-on-feeds.googlecode.com/svn/trunk/ feed-on-feeds
+}}}
+
+==Modify fof-config.php==
+
+{{{
+$ cd feed-on-feeds
+$ nano fof-config.php # or your favorite $EDITOR
+}}}
+
+Change these settings to match how MySQL is configured on your web server:
+
+{{{
+// Database connection information.  Host, username, password, database name.
+
+define('FOF_DB_HOST', "host.example.com");
+define('FOF_DB_USER', "username");
+define('FOF_DB_PASS', "password");
+define('FOF_DB_DBNAME', "database");
+}}}
+
+==Run install.php==
+
+Navigate to http://your-server.com/feed-on-feeds/install.php in your browser
+
+Database tables will be created, and a local 'cache' directory will be created.  You will be prompted to create a password for the 'admin' user.
+
+==Done!==
+
+Navigate to http://your-server.com/feed-on-feeds/, login, and start subscribing or creating users!
+
