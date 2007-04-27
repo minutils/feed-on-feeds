@@ -1,7 +1,7 @@
 #summary How to install Feed on Feeds straight from svn
 #labels Featured
 
-Before installing, make sure you undestand all the caveats listed in TrunkStatus.
+Before installing, make sure you understand all the caveats listed in TrunkStatus.
 
 ==Get code==
 
