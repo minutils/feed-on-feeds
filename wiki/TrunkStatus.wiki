@@ -11,7 +11,7 @@ This version has been fairly well tested on Firefox 1.5 and Safari 2.0.  It is i
 
 = What likely doesn't =
 
-I have made some effort to get IE 6 to work but don't test regularly.
+I have given up on IE6 completely.  IE7 mostly works.  Mostly.
 
 Feed on Feeds now has its own authentication built in, but I don't trust it yet and have my whole installation behind Apache authentication as well, and I suggest you do the same for the time being.
 
@@ -29,7 +29,7 @@ I can't read my feeds very well on the Wii browser!  This must be fixed!  It wou
 
 There is a basic implemenatiton of tagging, but it's nearly useless as is.  What would help is a way to tag a feed, or auto-tag items as they come in based on keywords or based on an outside tag source like del.icio.us.
 
-Favicons can be turned on in the prefs, but sometimes SimplePie (the RSS/Atom engine) thinks a feed has one when it really doesn't, which then slows down page loading considerably.
+Favicons can be turned on in the prefs, and with SimplePie's favicon caching, actually work reasonably well.
 
 Keyboard navigation.
 
