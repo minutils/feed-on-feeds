@@ -31,7 +31,7 @@ I can't read my feeds very well on the Wii browser!  This must be fixed!  It wou
 
 = What is half done =
 
-There is a basic implemenatiton of tagging, but it's nearly useless as is.  What would help is a way to tag a feed, or auto-tag items as they come in based on keywords or based on an outside tag source like del.icio.us.
+There is a basic implementation of tagging, but it's nearly useless as is.  What would help is a way to tag a feed, or auto-tag items as they come in based on keywords or based on an outside tag source like del.icio.us.
 
 Keyboard navigation.
 
