@@ -7,7 +7,11 @@ The code checked into the trunk right now is alpha quality.  When I think it's s
 
 = What seems to work =
 
-This version has been fairly well tested on Firefox 1.5 and Safari 2.0.  It is installed on a Linux host with PHP 5.1 and MySQL 5.0.  PHP 4-ish and MySQL 3-ish may also be fine.  On my server I have two users, one (me!) with about 200 subscribed feeds and another with just a handful.  Performance is acceptable.
+This version has been fairly well tested on Firefox 1.5 and Safari 2.0.  It is installed on a Linux host with PHP 5.1 and MySQL 5.0.  PHP 4.3.2 or greater should work, and MySQL 4 should also be fine.  On my server I have two users, one (me!) with about 200 subscribed feeds and another with just a handful.  Performance is acceptable.
+
+Favicons can be turned on in the prefs, and work pretty well thanks to SimplePie's detection and caching.
+
+Private feeds (https and/or authenticated) work, as long as your server has the cURL extension.
 
 = What likely doesn't =
 
@@ -28,8 +32,6 @@ I can't read my feeds very well on the Wii browser!  This must be fixed!  It wou
 = What is half done =
 
 There is a basic implemenatiton of tagging, but it's nearly useless as is.  What would help is a way to tag a feed, or auto-tag items as they come in based on keywords or based on an outside tag source like del.icio.us.
-
-Favicons can be turned on in the prefs, and with SimplePie's favicon caching, actually work reasonably well.
 
 Keyboard navigation.
 
