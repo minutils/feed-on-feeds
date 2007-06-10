@@ -15,13 +15,11 @@ Private feeds (https and/or authenticated) work, as long as your server has the 
 
 For security, I've audited every query and put in place some code to make sure that query parameters are all escaped and are of the expected types.  I also added some code to try to undo any damage caused by register_globals, if it happens to be on.  I've made sure every page that should require a log in does, implemented a hashed password scheme, and generally checked over all the code for security problems.  As far as I know, it's clean.
 
-= What likely doesn't =
+= What is definitely broken =
+
+== IE ==
 
 I have given up on IE6 completely.  IE7 mostly works.  Mostly.
-
-Feed on Feeds now has its own authentication built in, but I don't trust it yet and have my whole installation behind Apache authentication as well, and I suggest you do the same for the time being.
-
-= What is definitely broken =
 
 == Wii ==
 
