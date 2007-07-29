@@ -15,6 +15,8 @@ Private feeds (https and/or authenticated) work, as long as your server has the 
 
 For security, I've audited every query and put in place some code to make sure that query parameters are all escaped and are of the expected types.  I also added some code to try to undo any damage caused by register_globals, if it happens to be on.  I've made sure every page that should require a log in does, implemented a hashed password scheme, and generally checked over all the code for security problems.  As far as I know, it's clean.
 
+Tagging has now reached a minimally useful state.  You can tag and untag items and feeds, and view items by tag, and even just the new items in a particular tag.
+
 = What is definitely broken =
 
 == IE ==
@@ -27,6 +29,4 @@ I can't read my feeds very well on the Wii browser!  This must be fixed!  It wou
 
 = What is half done =
 
-There is a basic implementation of tagging, but it's nearly useless as is.  What would help is a way to tag a feed, or auto-tag items as they come in based on keywords or based on an outside tag source like del.icio.us.
-
-Keyboard navigation.
+KeyboardNavigation.
