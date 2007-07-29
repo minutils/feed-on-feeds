@@ -1,0 +1,15 @@
+#summary What keys do what
+
+Turn on keyboard navigation in the prefs first!
+
+||n||_next item_||
+||N||_last item_||
+||p||_previous item_||
+||P||_first item_||
+||s||_star current item_||
+||h||_toggle current item between hidden and shown_||
+||H||_toggle all items between hidden and shown_||
+||f||_flag current item_||
+||F||_flag all items up to and including current item_||
+||U||_unflag all items_||
+||j||_magic button! if the current item is completely visible, flag it and move to the next item.  if not, scroll one page.  if the current item is the last item, ask to mark all items as read._||
