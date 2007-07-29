@@ -12,4 +12,4 @@ Turn on keyboard navigation in the prefs first!
 ||f||_flag current item_||
 ||F||_flag all items up to and including current item_||
 ||U||_unflag all items_||
-||j||_magic button! if the current item is completely visible, flag it and move to the next item.  if not, scroll one page.  if the current item is the last item, ask to mark all items as read._||
+||j||_magic button! if the end of the current item is visible, flag it and move to the next item.  if not, scroll one page.  if the current item is the last item, ask to mark all items as read._||
