@@ -10,10 +10,11 @@ $ cd /WEB/ROOT
 $ svn checkout http://feed-on-feeds.googlecode.com/svn/trunk/ feed-on-feeds
 }}}
 
-==Modify fof-config.php==
+==Create fof-config.php==
 
 {{{
 $ cd feed-on-feeds
+$ cp fof-config-sample.php fof-config.php
 $ nano fof-config.php # or your favorite $EDITOR
 }}}
 
@@ -32,7 +33,7 @@ define('FOF_DB_DBNAME', "database");
 
 Navigate to http://example.com/feed-on-feeds/install.php in your browser
 
-Database tables will be created, and a local 'cache' directory will be created.  You will be prompted to create a password for the 'admin' user.
+Compatibility with your PHP installation will be checked, database tables will be created, and a local 'cache' directory will be created.  You will be prompted to create a password for the 'admin' user.
 
 ==Done!==
 
