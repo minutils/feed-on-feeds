@@ -6,10 +6,16 @@ Turn on keyboard navigation in the prefs first!
 ||N||_last item_||
 ||p||_previous item_||
 ||P||_first item_||
-||s||_star current item_||
+||s||_toggle star on current item_||
 ||h||_toggle current item between hidden and shown_||
 ||H||_toggle all items between hidden and shown_||
 ||f||_flag current item_||
 ||F||_flag all items up to and including current item_||
 ||U||_unflag all items_||
 ||j||_magic button! if the end of the current item is visible, flag it and move to the next item.  if not, scroll one page.  if the current item is the last item, ask to mark all items as read._||
+||J||_more magic! just like 'j', but skip immediately to the next item, even if this one is longer than one screen._||
+
+Other hints:
+
+  * You can shift-click or double-click the checkbox in an item to flag that item and all the ones above it.
+  * You can alt-click an item to select or deselect it.
