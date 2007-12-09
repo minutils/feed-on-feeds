@@ -1,4 +1,5 @@
 #summary What keys do what
+#labels Featured
 
 Turn on keyboard navigation in the prefs first!
 
