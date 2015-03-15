@@ -1,0 +1,17 @@
+# Introduction #
+
+Using FoF, you can create a public HTML page and public Atom feed of all or some of your subscribed items.  Here's how:
+
+# Sharing all your items #
+
+  * Go into prefs.
+  * Right under the thing that lets you change your password, change "Share **no** items" to Share **all** items".
+  * Push "Save Preferences".  When the page reloads, right next to the sharing selector will be a link to a page that contains your latest 100 shared items, which also contains an autodiscovery link to your shared feed!
+
+# Sharing some of your items #
+
+  * Go into prefs.
+  * Right under the thing that lets you change your password, change "Share **no** items" to Share **tagged as "shared"** items".
+  * Push "Save Preferences".  When the page reloads, right next to the sharing selector will be a link to your shared page, which also contains an autodiscovery link to your shared feed.  Right now, this page is empty.
+  * When viewing items now, there will be a little widget at the bottom of each item that says "not shared".  Click it.  It should change to "shared".  Go back and look at your shared page.  Magic!
+  * You can also share entire feeds.  Just go into preferences and tag the feed as "shared".  Now when new items come in, they'll be tagged as shared automatically, and appear on your shared page.  You can selectively unshare items, if you like.

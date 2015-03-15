@@ -1,0 +1,5 @@
+You're going to need to get access your your database directly, either by command line, or through something like phpMyAdmin.  Just use this SQL statement to overwrite the user\_password\_hash for the admin account (user id 1) with this magic value:
+
+`UPDATE fof_user SET user_password_hash = '21232f297a57a5a743894a0e4a801fc3' WHERE user_id = 1`
+
+Now you can log in with no password, and change it to something you will hopefully remember this time.
