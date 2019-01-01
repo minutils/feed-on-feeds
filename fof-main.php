@@ -97,7 +97,6 @@ function require_user()
 function fof_authenticate($user_name, $user_password_hash)
 {
     global $fof_user_name;
-        
     if(fof_db_authenticate($user_name, $user_password_hash))
     {
         setcookie ( "user_name", $fof_user_name, time()+60*60*24*365*10 );
@@ -511,7 +510,7 @@ function fof_delete_subscription($user_id, $feed_id)
 {
     fof_db_delete_subscription($user_id, $feed_id);
     
-    if(mysql_num_rows(fof_get_subscribed_users($feed_id)) == 0)
+    if(mysqli_num_rows(fof_get_subscribed_users($feed_id)) == 0)
     {
     	fof_db_delete_feed($feed_id);
     }
@@ -1017,7 +1016,7 @@ function fof_init_plugins()
     while($file=readdir($dirlist))
     {
     	fof_log("considering " . $file);
-        if(ereg('\.php$',$file) && !$p->get('plugin_' . substr($file, 0, -4)))
+        if(preg_match('/\.php$/',$file) && !$p->get('plugin_' . substr($file, 0, -4)))
         {
         	fof_log("including " . $file);
 

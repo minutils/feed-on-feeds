@@ -250,7 +250,7 @@ foreach($tables as $table)
 {
 	if(!fof_db_query($table, 1))
 	{
-		exit ("Can't create table.  MySQL says: <b>" . mysql_error() . "</b><br>" );
+		exit ("Can't create table.  MySQL says: <b>" . mysqli_error() . "</b><br>" );
 	}
 }
 
@@ -260,7 +260,7 @@ Tables exist.<hr>
 <?php
 $result = fof_db_query("show columns from $FOF_FEED_TABLE like 'feed_image_cache_date'");
 
-if(mysql_num_rows($result) == 0)
+if(mysqli_num_rows($result) == 0)
 {
 
 print "Upgrading schema...";
@@ -275,7 +275,7 @@ print "Done.<hr>";
 <?php
 $result = fof_db_query("show columns from $FOF_USER_TABLE like 'user_password_hash'");
 
-if(mysql_num_rows($result) == 0)
+if(mysqli_num_rows($result) == 0)
 {
 
 print "Upgrading schema...";
@@ -291,7 +291,7 @@ print "Done.<hr>";
 <?php
 $result = fof_db_query("show columns from $FOF_FEED_TABLE like 'feed_cache_attempt_date'");
 
-if(mysql_num_rows($result) == 0)
+if(mysqli_num_rows($result) == 0)
 {
 
 print "Upgrading schema...";
@@ -339,7 +339,7 @@ Cache directory exists and is writable.<hr>
 
 <?php
 	$result = fof_db_query("select * from $FOF_USER_TABLE where user_name = 'admin'");
-	if(mysql_num_rows($result) == 0) {
+	if(mysqli_num_rows($result) == 0) {
 ?>
 
 You now need to choose an initial password for the 'admin' account:<br>
